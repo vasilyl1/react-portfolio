@@ -1,12 +1,16 @@
 import React from 'react';
 // importing CSS file as a dependency
 import '../styles/Style.css';
+import Navigation from './Navigation';
 
 function Header() {
   return (
-    <header className="header">
-      <h1>Home</h1>
-    </header>
+    <div>
+      <header className="header">
+        <h1>Vasily Likhovaydo</h1>
+      </header>
+      <Navigation />
+    </div>
   );
 }
 
