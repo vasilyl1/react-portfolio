@@ -8,7 +8,6 @@ function Footer({ currentPage, handlePageChange }) {
       <li className="nav-item">
         <a
           href="https://github.com/vasilyl1"
-          onBlur={() => handlePageChange('GitHub')}
           // if the current page is "GitHub"
           // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
           className={currentPage === 'GitHub' ? 'nav-link active' : 'nav-link'}
@@ -19,7 +18,6 @@ function Footer({ currentPage, handlePageChange }) {
       <li className="nav-item">
         <a
           href="https://www.linkedin.com/in/vlikhovaido/"
-          onBlur={() => handlePageChange('LinkedIn')}
           className={currentPage === 'GitHub' ? 'nav-link active' : 'nav-link'}
         >
           LinkedIn
@@ -27,8 +25,7 @@ function Footer({ currentPage, handlePageChange }) {
       </li>
       <li className="nav-item">
         <a
-          href="#e-mail"
-          onBlur={() => handlePageChange('Email')}
+          href="#email"
           // if the current page is "Home"
           // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
           className={currentPage === 'Email' ? 'nav-link active' : 'nav-link'}
@@ -39,7 +36,6 @@ function Footer({ currentPage, handlePageChange }) {
       <li className="nav-item">
         <a
           href="#phone"
-          onBlur={() => handlePageChange('Phone')}
           // if the current page is "Home"
           // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
           className={currentPage === 'Phone' ? 'nav-link active' : 'nav-link'}
