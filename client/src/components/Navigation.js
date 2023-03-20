@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import '../styles/Style.css';
 import Tabs from './Tabs';
-import Home from './tabs/Home';
 import About from './tabs/About';
-import Project from './tabs/Project';
+import Portfolio from './tabs/Portfolio';
 import Contact from './tabs/Contact';
+import Resume from './tabs/Resume';
 
 const styles = {
   card: {
@@ -26,16 +26,16 @@ function Navigation() {
 
   // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
   const renderPage = () => {
-    if (currentPage === 'Home') {
-      return <Home />;
-    }
     if (currentPage === 'About') {
       return <About />;
     }
-    if (currentPage === 'Projects') {
-      return <Project />;
+    if (currentPage === 'Portfolio') {
+      return <Portfolio />;
     }
-    return <Contact />;
+    if (currentPage === 'Contact') {
+      return <Contact />;
+    }
+    return <Resume />;
   };
 
   const handlePageChange = (page) => setCurrentPage(page);

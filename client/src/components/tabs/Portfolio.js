@@ -22,10 +22,10 @@ const styles = {
 
 // In `Card`, we can assign a style from an object by using curly braces
 // We are assigning the card, heading, and content all from our `style` object
-function Project() {
+function Portfolio() {
   return (
     <div style={styles.project}>
-      <div style={styles.heading}>Lorem ipsum dolor</div>
+      <div style={styles.heading}>Portfolio</div>
       <div style={styles.content}>
         `Sed ut perspiciatis unde omnis iste natus error sit voluptatem
         accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
@@ -45,4 +45,4 @@ function Project() {
   );
 }
 
-export default Project;
+export default Portfolio;
