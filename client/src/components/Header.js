@@ -1,6 +1,5 @@
 import React from 'react';
 // importing CSS file as a dependency
-import '../styles/Style.css';
 import Navigation from './Navigation';
 
 function Header() {
@@ -8,6 +7,10 @@ function Header() {
     <div>
       <header className="header">
         <h1>Vasily Likhovaydo</h1>
+      </header>
+      <header className="hdr1">
+        <h1>ideas meet future !</h1>
+        <img src={require('./../images/vas-photo.jpeg')}/>
       </header>
       <Navigation />
     </div>
