@@ -10,7 +10,7 @@ function Header() {
       </header>
       <header className="hdr1">
         <h1>ideas meet future !</h1>
-        <img src={require('./../images/vas-photo.jpeg')}/>
+        <img src={require('./../images/vas-photo.jpeg')} alt=''/>
       </header>
       <Navigation />
     </div>
