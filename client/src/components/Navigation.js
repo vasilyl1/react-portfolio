@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import '../styles/Style.css';
 import Tabs from './Tabs';
 import About from './tabs/About';
-import Portfolio from './tabs/Portfolio';
+import Project from './tabs/Project';
 import Contact from './tabs/Contact';
 import Resume from './tabs/Resume';
+import {projects} from './data/portfolio';
 
 function Navigation() {
   const [currentPage, setCurrentPage] = useState('About');
@@ -14,8 +15,13 @@ function Navigation() {
     if (currentPage === 'About') {
       return <About />;
     }
+    // projects is an array of objects imported from portfolio with all the projects data.
+    // rendering all items of this array via Project component using .map 
+    // and passing index for each element of array for doing a unique key at Project
     if (currentPage === 'Portfolio') {
-      return <Portfolio />;
+      return <div className='n2body-right'>
+        { projects.map((project,index) => <Project project={project} index={index} />) }
+      </div>;
     }
     if (currentPage === 'Contact') {
       return <Contact />;

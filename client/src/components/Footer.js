@@ -4,7 +4,7 @@ import '../styles/Style.css';
 
 function Footer({ currentPage, handlePageChange }) {
   return (
-    <ul className="nav nav-tabs">
+    <ul className="nav footer nav-tabs">
       <li className="nav-item">
         <a
           href="https://github.com/vasilyl1"

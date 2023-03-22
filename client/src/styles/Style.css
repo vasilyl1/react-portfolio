@@ -31,8 +31,13 @@ a.menu, a.nav-link {
   font-size: 17px;
 }
 
+.footer {
+  background-color: var(--menu-background-color);
+  line-height: normal;
+}
+
 /* Change the color of links on hover */
-.menu a:hover, a.nav-link:hover {
+a.nav-link:hover {
   background-color: var(--gin);
   color: var(--outer-space);
 }
@@ -80,7 +85,7 @@ a.menu, a.nav-link {
   font-size: 120%;
   margin-right: -5%;
   margin-bottom: 5%;
-  padding-top: 12%;
+  padding-top: 7%;
   padding-bottom: 7%;
   color: var(--outer-space);
 }
@@ -245,6 +250,10 @@ it's own background image */
   color: var(--outer-space);
   margin-left: 5%;
   overflow-wrap: break-word;
+}
+
+a.h3 {
+  font-size: 90%
 }
 
 .n2body-right-3 h2 {
