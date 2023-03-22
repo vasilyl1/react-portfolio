@@ -136,6 +136,10 @@ a.nav-link:hover {
   color: var(--gin);
 }
 
+.n2body-left-2 h1 {
+  text-align: left;
+}
+
 /* Set the size for the fixed width box on the right */
 .n2body-right {
   display:flex;

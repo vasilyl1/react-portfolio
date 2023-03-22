@@ -2,24 +2,34 @@ import React from 'react';
 
 function Resume() {
   return (
-    <div>
-      <div>Resume</div>
-      <div>
-        `Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-        illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-        explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-        odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-        voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
-        quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
-        eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-        voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam
-        corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
-        Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
-        quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
-        voluptas nulla pariatur?`
-      </div>
-    </div>
+    <div className='n2body-left-2'>
+    <h1>Resume</h1><br></br>
+    <a href = 'https://docs.google.com/document/d/1D4vjZ32bd7KvrzL8HVomzVeLZNW_UMn4SIrfw0Hkj60/edit?usp=sharing'>Download my resume</a><br></br>
+    <p>Front-end Proficiencies</p> <br></br>
+    <ul style={{listStyleType: 'square', marginLeft: '3%'}}>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>jQuery</li>
+    <li>responsive design</li>
+    <li>React</li>
+    <li>Bootstrap</li>
+    <li>Progressive Web Applications</li>
+    </ul><br></br>
+    <p>Back-end Proficiencies</p><br></br>
+    <ul style={{listStyleType: 'square', marginLeft: '3%'}}>
+    <li>API</li>
+    <li>Node</li>
+    <li>Express</li>
+    <li>MySQL, Sequelize</li>
+    <li>MongoDB, Mongoose</li>
+    <li>IndexedDB</li>
+    <li>MVC</li>
+    <li>MERN</li>
+    <li>GraphQL</li>
+    </ul>
+    <br></br>
+</div>
   );
 }
 
