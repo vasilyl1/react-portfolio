@@ -24,6 +24,17 @@ function Contact() {
       setMessage(inputValue);
     }
   };
+  const handleMoveOut = (e) => {
+    // Getting the value and name of the input which triggered the change
+    const { target } = e;
+    const inputType = target.name;
+    const inputValue = target.value;
+
+    // Based on the input type, set the state of either email, username, and password
+     (inputValue === '') 
+     ?  setResultMessage(`${inputType} is a required field`)
+     :  setResultMessage(``);
+  };
 
   const handleFormSubmit = (e) => {
     // Preventing the default behavior of the form submit (which is to refresh the page)
@@ -39,7 +50,7 @@ function Contact() {
       setResultMessage('Thank you for leaving your message!');
     }
 
-    // If everything goes according to plan, we want to clear out the input after a successful registration.
+    // If everything goes according to plan, clear out the input after a successful registration.
     setUserName('');
     setMessage('');
     setEmail('');
@@ -55,6 +66,7 @@ function Contact() {
           value={userName}
           name="userName"
           onChange={handleInputChange}
+          onBlur={handleMoveOut}
           type="text"
           placeholder="name"
         />
@@ -63,6 +75,7 @@ function Contact() {
           value={email}
           name="email"
           onChange={handleInputChange}
+          onBlur={handleMoveOut}
           type="email"
           placeholder="email"
         />
@@ -71,6 +84,7 @@ function Contact() {
           value={message}
           name="message"
           onChange={handleInputChange}
+          onBlur={handleMoveOut}
           type="message"
           placeholder="Your message here"
           className='inputMessage'

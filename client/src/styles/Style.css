@@ -37,9 +37,10 @@ a.menu, a.nav-link {
 }
 
 /* Change the color of links on hover */
-a.nav-link:hover {
+a.nav-link:hover, button.nav-link:hover {
   background-color: var(--gin);
   color: var(--outer-space);
+  cursor: pointer;
 }
 
 /* Add a color to the active/current link */
@@ -235,13 +236,9 @@ it's own background image */
   font-size: 110%;
   font-weight: bold;
   text-decoration: none;
-  margin-top: 15%;
-  color: var(--outer-space);
+  margin-top: 16%;
+  color: #04090d;
   margin-left: 5%;
-}
-
-.n2body-right-3 a {
-  color: var(--gin);
 }
 
 .n2body-right-2 h2, a.h2 {
