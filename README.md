@@ -14,7 +14,7 @@ In many cases several deployed projects is a minimum requirement to receive an i
 ## Installation
 
 This page is deployed on the web at the following URL:
-https://vasilyl1.github.io/portfolio/
+https://portfolio-vasily.herokuapp.com/
 
 ## Usage
 
