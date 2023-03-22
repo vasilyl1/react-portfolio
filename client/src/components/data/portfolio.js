@@ -14,7 +14,7 @@ const projects = [
         repo:'https://github.com/vasilyl1/sport-link-connect',
         deployment: 'https://vasilyl1.github.io/sport-link-connect/',
         tech:'HTML/CSS/JavaScript',
-        class:'n2body-right-3 box3'
+        class:'box3 n2body-right-3'
     },
     {
         name: 'CMS Blog',
