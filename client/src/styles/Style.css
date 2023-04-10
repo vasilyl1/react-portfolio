@@ -172,9 +172,7 @@ it's own background image */
 
 .n2body-right-2 {
   
- /* background-image: url(../images/png1a.png);
-  background-image: url(../images/sportlinkconnect.png);*/
-  background-image: url(../images/imgProj2.png);
+  background-image: url(../images/cryptocoin.png);
   background-size: cover;
   background-position: 2% 29%;
   display:flex;
@@ -183,7 +181,7 @@ it's own background image */
   margin:1%;
 }
 
-.n2body-right-3, .n2body-right-4, .n2body-right-5, .n2body-right-6 {
+.n2body-right-3, .n2body-right-4, .n2body-right-5, .n2body-right-6, .n2body-right-7 {
   background-size: cover;
   background-position: center;
   display:flex;
@@ -193,29 +191,39 @@ it's own background image */
 }
 
 .n2body-right-3 {
-  /*background-image: url(../images/imgProj2.png);*/
+
+   background-image: url(../images/imgProj2.png);
+   background-size: cover;
+   background-position: 2% 29%;
+   display:flex;
+   flex-direction:column;
+   flex-basis:98%;
+   margin:1%;
+ }
+
+.n2body-right-4 {
   background-image: url(../images/sportlinkconnect.png);
 }
 
-.n2body-right-4 {
+.n2body-right-5 {
   background-image: url(../images/png3a.png);
 }
 
-.n2body-right-5 {
+.n2body-right-6 {
   background-image: url(../images/png4a.png);
 }
 
-.n2body-right-6 {
+.n2body-right-7 {
   background-image: url(../images/png5a.png);
 }
 
 /* glowing the picture boxes on hovering */
-.box2, .box3, .box4, .box5, .box6 {
+.box2, .box3, .box4, .box5, .box6, .box7 {
   display:flex;
   flex-direction:column;
 }
 
-.box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover {
+.box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover, .box7:hover {
   box-shadow: inset 0px 0px 8px #0f6283, 0 0 15px #234e60;
   backdrop-filter: sepia(50%);
 }
@@ -232,7 +240,7 @@ it's own background image */
 
 }
 
-.n2body-right-6 a, .n2body-right-5 a, .n2body-right-4 a, .n2body-right-3 a {
+.n2body-right-7 a, .n2body-right-6 a, .n2body-right-5 a, .n2body-right-4 a, .n2body-right-3 a {
   font-size: 110%;
   font-weight: bold;
   text-decoration: none;
