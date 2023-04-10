@@ -2,7 +2,7 @@ import React from 'react';
 // importing CSS file as a dependency
 import Navigation from './Navigation';
 
-function Header() {
+function Header({currPage}) {
   return (
     <div>
       <header className="header">
@@ -12,7 +12,7 @@ function Header() {
         <h1>ideas meet future !</h1>
         <img src={require('./../images/vas-photo.jpeg')} alt=''/>
       </header>
-      <Navigation />
+      <Navigation currPage = {currPage}/>
     </div>
   );
 }

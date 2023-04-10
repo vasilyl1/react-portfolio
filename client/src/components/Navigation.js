@@ -7,8 +7,10 @@ import Contact from './tabs/Contact';
 import Resume from './tabs/Resume';
 import {projects} from './data/portfolio';
 
-function Navigation() {
-  const [currentPage, setCurrentPage] = useState('About');
+function Navigation({currPage}) {
+  //const [currentPage, setCurrentPage] = useState('About');
+  const [currentPage, setCurrentPage] = useState(currPage);
+
 
   // This method is checking to see what the value of `currentPage` is. 
   // Depending on the value of currentPage, we return the corresponding component to render.
